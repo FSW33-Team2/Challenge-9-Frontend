@@ -1,0 +1,34 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*----page1----------*/
+.page2 {
+  background-image: url(../images/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 146.1vh;
+}
+
+.py-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mb-4 {
+  border: 50px solid;
+  margin-top: 5vh;
+  width: 125%;
+}
+
+.text-muted-9 {
+  text-align: center;
+  margin: 10px;
+}
+
+.text-center {
+  background-color: black;
+}

@@ -1,0 +1,222 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*----page1----------*/
+.page1 {
+  background-image: url(../images/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 146.1vh;
+}
+
+nav {
+  opacity: 50%;
+  height: 13vh;
+  background-color: black;
+}
+
+.navteks1 {
+  position: absolute;
+  width: 5.6vw;
+  height: 5vh;
+  left: 7.8vw;
+  top: 4.3vh;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7vw;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 5vh;
+  color: #ffffff;
+}
+
+.navteks2 {
+  position: absolute;
+  left: 23.8vw;
+  height: 3vh;
+  width: 4.9vw;
+  top: 5.7vh;
+  text-align: right;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 0.87vw;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 2.4vh;
+  color: #ffffff;
+}
+
+.navteks3 {
+  position: absolute;
+  left: 31.1vw;
+  height: 3vh;
+  width: 4.9vw;
+  top: 5.7vh;
+  text-align: right;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 0.87vw;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 2.4vh;
+  color: #ffffff;
+}
+
+.navteks4 {
+  position: absolute;
+  left: 38.7vw;
+  height: 3vh;
+  width: 4.9vw;
+  top: 5.7vh;
+  text-align: right;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 0.87vw;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 2.4vh;
+  color: #ffffff;
+}
+
+.navteks5 {
+  position: absolute;
+  left: 47.47vw;
+  height: 3vh;
+  width: 7vw;
+  top: 5.7vh;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 0.87vw;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 2.4vh;
+  color: #ffffff;
+}
+
+.navteks6 {
+  position: absolute;
+  left: 70vw;
+  height: 3vh;
+  width: 20vw;
+  top: 5.7vh;
+  text-align: center;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 0.87vw;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 2.4vh;
+  color: #ffffff;
+}
+
+.navteks7 {
+  position: absolute;
+  left: 88.79vw;
+  height: 3vh;
+  width: 7vw;
+  top: 5.7vh;
+  text-align: right;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 0.87vw;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 2.4vh;
+  color: #ffffff;
+}
+
+.click {
+  text-decoration: none;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 1.87vw;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 2.4vh;
+  color: #ffffff;
+}
+
+.teks1 {
+  color: white;
+  text-align: center;
+  position: absolute;
+  height: 11.12vh;
+  left: 9.22%;
+  right: 10.47%;
+  top: 47.74vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5.2vw;
+  line-height: 12.6vh;
+  text-align: center;
+  letter-spacing: 0.2vw;
+  text-transform: uppercase;
+}
+
+.teks2 {
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  left: 33.8%;
+  top: 67.5vh;
+  right: 29.66%;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.75vw;
+  letter-spacing: 0.1vw;
+}
+
+button {
+  background-color: orange;
+  width: 19vw;
+  height: 9.1vh;
+  border: none;
+  position: absolute;
+  left: 40.83%;
+  right: 41.09%;
+  top: 80.5vh;
+}
+
+.button1 {
+  border-radius: 4px;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.17vw;
+  color: #1a1917;
+  text-align: center;
+  line-height: 3.3vh;
+}
+
+.teks3 {
+  position: absolute;
+  top: 133vh;
+  left: 47.66%;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.8vw;
+  line-height: 3.34vh;
+  text-align: justify;
+  color: #ffffff;
+}
+
+.scrolldown1 {
+  position: absolute;
+  width: 1.48vw;
+  top: 136.76vh;
+  left: 48.4vw;
+}
