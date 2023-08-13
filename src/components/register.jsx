@@ -68,6 +68,13 @@ function RegisterForm() {
           onChange={handleChange}
           placeholder="Password"
         />
+        <input
+          type="password"
+          name="password"
+          value={state.password}
+          onChange={handleChange}
+          placeholder="Re type your Password"
+        />
         <button>Submit</button>
       </form>
     </div>
