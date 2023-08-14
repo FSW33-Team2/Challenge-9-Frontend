@@ -9,8 +9,7 @@ import {
 import GameLeaderboardPage from "./pages/GameLeaderboardPage";
 import AuthPage from "./pages/AuthPage";
 import GameListPage from "./pages/GameListPage";
-import RpcGamePage from "./pages/RpcGamePage";
-import RpcGpt from "./components/gamelist/RPcgpt";
+
 
 
 function App() {
@@ -23,9 +22,8 @@ function App() {
 
         <Route path="/gamelist" element={<GameListPage />} />
 
-        <Route path="/rockpaperscissor/:id" element={<RpcGamePage />} />
 
-        <Route path="/rockpaperscissor" element={<RpcGpt />} />
+
       </Routes>
     </Router>
   );
