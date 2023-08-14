@@ -11,8 +11,6 @@
   height: 146.1vh;
 }
 
-
-
 .mb-4 {
   margin-top: 5vh;
   width: 125%;
@@ -31,8 +29,6 @@
   border: 10px solid red;
 }
 
-
-
 .data {
   border: 5px solid black;
   width: 50vw;
@@ -41,17 +37,15 @@
   margin-top: 50vh;
 }
 
-.picture{
+.picture {
   position: absolute;
   border: 5px solid black;
   top: 50vh;
   left: 13vw;
   background-color: rgba(222, 149, 14, 0.918);
-  width: 25vw
-  
-  
+  width: 25vw;
 }
 
-.body1{
+.body1 {
   background-color: blue;
 }

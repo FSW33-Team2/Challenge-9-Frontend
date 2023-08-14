@@ -22,10 +22,18 @@ const Landingpage = () => {
       {/* <!--page1-----------> */}
       <section className="page1">
         <nav className="navbar navbar-light">
-          <div className="navteks1">LOGO</div>
-          <div className="navteks2">HOME</div>
+          <div className="navteks1">
+          <a className="click1" href="/">
+              LOGO
+            </a>
+          </div>
+          <div className="navteks2">
+          <a className="click1" href="/">
+              HOME
+            </a>
+          </div>
           <div className="navteks3">
-            <a className="click1" href="">
+            <a className="click1" href="/score">
               SCORE
             </a>
           </div>

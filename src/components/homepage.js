@@ -5,9 +5,21 @@ const Homepage = () => {
   return (
     <section className="page1">
       <nav className="navbar navbar-light">
-        <div className="navteks1">LOGO</div>
-        <div className="navteks2">HOME</div>
-        <div className="navteks3">SCORE</div>
+        <div className="navteks1">
+          <a className="click" href="/">
+            LOGO
+          </a>
+        </div>
+        <div className="navteks2">
+          <a className="click" href="/">
+            HOME
+          </a>
+        </div>
+        <div className="navteks3">
+          <a className="click" href="/score">
+            SCORE
+          </a>
+        </div>
         <div className="gamelist">
           <a className="click" href="/gamelist">
             GAME LIST
@@ -19,7 +31,7 @@ const Homepage = () => {
           </a>
         </div>
         <div className="welcome">
-          <a className="click" href="/register">
+          <a className="click" href="/">
             WELCOME BACK
           </a>
         </div>

@@ -8,10 +8,14 @@ function App() {
   return (
     <div className="App">
       <main>
-        {/* <Homepage /> */}
-
-        <Landingpage />
-        {/*<Profilepage /> */}
+        <Router>
+          <Routes>
+            {/* routing tiap halaman---------- */}
+            <Route exact path="/" element={<Landingpage />} />
+            <Route path="/profile" element={<Profilepage />} />
+            <Route path="/login" element={<Homepage />} />
+          </Routes>
+        </Router>
       </main>
     </div>
   );
