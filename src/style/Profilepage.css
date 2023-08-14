@@ -4,22 +4,16 @@
 }
 
 /*----page1----------*/
-.page2 {
+.profile {
   background-image: url(../images/main-bg.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 146.1vh;
 }
 
-.py-5 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+
 
 .mb-4 {
-  border: 50px solid;
   margin-top: 5vh;
   width: 125%;
 }
@@ -30,5 +24,34 @@
 }
 
 .text-center {
-  background-color: black;
+  background-color: white;
+}
+
+.ini-apa {
+  border: 10px solid red;
+}
+
+
+
+.data {
+  border: 5px solid black;
+  width: 50vw;
+  background-color: white;
+  margin-left: 40vw;
+  margin-top: 50vh;
+}
+
+.picture{
+  position: absolute;
+  border: 5px solid black;
+  top: 50vh;
+  left: 13vw;
+  background-color: rgba(222, 149, 14, 0.918);
+  width: 25vw
+  
+  
+}
+
+.body1{
+  background-color: blue;
 }
