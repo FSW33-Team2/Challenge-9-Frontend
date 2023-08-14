@@ -1,13 +1,12 @@
 import React from "react";
-import IndexGamelist from "../components/gamelist";
-
+import IndexGamelist from "../components/gamelist/gamelist";
 
 function GameListPage() {
   return (
-      <>
-        <IndexGamelist />
-      </>
-  )
+    <>
+      <IndexGamelist />
+    </>
+  );
 }
 
 export default GameListPage;
