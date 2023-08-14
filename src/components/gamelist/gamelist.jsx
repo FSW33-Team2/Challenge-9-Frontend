@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import "../../assets/css/gamelist.css";
 import { Link } from "react-router-dom";
 import axios from "../lib/axios";
-import { FaPlayCircle } from "react-icons/fa";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function IndexGamelist({ refresh }) {
   const [games, setGames] = useState([]);
@@ -17,9 +19,24 @@ export default function IndexGamelist({ refresh }) {
   useEffect(() => {
     getGamesFromBe();
   }, [refresh]);
+
+  const goToHome = () => {
+    // Add logic to navigate to the home page
+    // For example: history.push("/home");
+  };
+
   return (
     <div className="wrapper">
-      <h1>ALL GAMES</h1>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <button className="btn btn-outline-warning" onClick={goToHome}><FontAwesomeIcon icon={faHome} /></button>
+      <br />
+      <br />
+      <h1>Game Recomendation</h1>
       <div className="section-1-wrapper">
         <br />
         {/* {games &&
@@ -39,6 +56,19 @@ export default function IndexGamelist({ refresh }) {
               </a>
             ))}
         </div>
+        <div className="game-categories">
+        <h1>GAME FAVORITE</h1>
+        <div className="section-1-img">
+                    <a href="#"><div className="img img-1 text-white"></div></a>
+                    <a href="#"><div className="img img-2"></div></a>
+                    <a href="#"><div className="img img-3"></div></a>
+                    <a href="#"><div className="img img-4"></div></a>
+                    <a href="#"><div className="img img-5"></div></a>
+                    <a href="#"><div className="img img-6"></div></a>
+                    <a href="#"><div className="img img-2"></div></a>
+                    <a href="#"><div className="img img-3"></div></a>
+                </div>
+      </div>
       </div>
 
       <div className="game-categories">
@@ -59,9 +89,6 @@ export default function IndexGamelist({ refresh }) {
           <a href="#">
             <div className="gw gw-5"></div>
           </a>
-        </div>
-
-        <div className="game-wrapper left">
           <a href="#">
             <div className="gw gw-6"></div>
           </a>
@@ -70,12 +97,6 @@ export default function IndexGamelist({ refresh }) {
           </a>
           <a href="#">
             <div className="gw gw-8"></div>
-          </a>
-          <a href="#">
-            <div className="gw gw-9"></div>
-          </a>
-          <a href="#">
-            <div className="gw gw-10"></div>
           </a>
         </div>
       </div>

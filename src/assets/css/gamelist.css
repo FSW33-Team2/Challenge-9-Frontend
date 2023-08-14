@@ -57,7 +57,7 @@ ul.navbar li a:hover:not(.active) {
   color: #fec53a;
 } */
 #btn {
-  width: 250px;
+  width: 100px;
   height: 10vh;
   background: #fec53a;
   color: #000;
@@ -76,8 +76,6 @@ ul.navbar li a:hover:not(.active) {
 /* Content desc starts here */
 .content-wrapper {
   width: 80%;
-  min-height: 80vh;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -92,13 +90,12 @@ ul.navbar li a:hover:not(.active) {
 }
 .content-desc h1 {
   font-size: 3rem;
-  margin-bottom: 10px;
 }
+
 .content-desc p {
   width: 550px;
   font-size: 1.3rem;
   line-height: 2rem;
-  margin-bottom: 10px;
 }
 .content-desc span {
   color: #fec53a;
@@ -182,9 +179,16 @@ ul.navbar li a:hover:not(.active) {
   position: relative;
   font-weight: 400;
 }
+
+.section-1-p {
+  color:aliceblue;
+  font-size: 1rem;
+}
+
 .section-1-img {
   display: flex;
 }
+
 .section-1-img .img {
   width: 100px;
   height: 130px;
@@ -192,31 +196,37 @@ ul.navbar li a:hover:not(.active) {
   background-size: cover;
   background-position: center;
   border-radius: 10px;
+  margin: 0 15px 5px 0;
 }
 .section-1-img .img-2 {
   background: url(../images/nba.jpg);
   background-size: cover;
   background-position: center;
+  margin: 0 15px 5px 0;
 }
 .section-1-img .img-3 {
   background: url(../images/battlefield.jpg);
   background-size: cover;
   background-position: center;
+  margin: 0 15px 5px 0;
 }
 .section-1-img .img-4 {
   background: url(../images/warxone.jpg);
   background-size: cover;
   background-position: center;
+  margin: 0 15px 5px 0;
 }
 .section-1-img .img-5 {
   background: url(../images/craft.jpeg);
   background-size: cover;
   background-position: center;
+  margin: 0 15px 5px 0;
 }
 .section-1-img .img-6 {
   background: url(../images/fortnite.jpg);
   background-size: cover;
   background-position: center;
+  margin: 0 15px 5px 0;
 }
 
 .img:hover {
@@ -237,12 +247,12 @@ ul.navbar li a:hover:not(.active) {
   display: flex;
 }
 .gw {
-  width: 120px;
+  width: 100px;
   height: 120px;
   background: url(../images/asphalt8.jpg);
   background-size: cover;
   background-position: center;
-  margin: 20px 15px 0 0;
+  margin: 0 15px 0 0;
   border-radius: 10px;
 }
 .gw:hover {
