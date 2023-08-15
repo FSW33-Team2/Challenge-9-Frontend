@@ -1,34 +1,30 @@
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import axios from "../lib/axios";
 import {
   faMedal,
 } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { useParams } from "react-router-dom";
 
-export default function Table() {
+export default function Table({ refresh }) {
+  const {gameId} = useParams();
   const [players, setPlayers] = useState([]);
-  const [refresh, setRefh] = useState(0);
-  const [originalPlayers, setOriginalPlayers] = useState([]);
-  const [searchField, setSearchField] = useState("username");
-  const [searchQuery, setSearchQuery] = useState("");
+  const searchField = "player";
+  const searchQuery = "";
 
-  const loadPlayersFromApi = () => {
-    // Simulate fetching data from API
-    const fakeApiData = [
-          { id: 1, username: "user1", email: "user1@example.com", experience: 100, lvl:20, score: 1000 },
-          { id: 2, username: "user2", email: "user2@example.com", experience: 200, lvl:30, score: 2000 },
-          { id: 3, username: "user3", email: "user3@example.com", experience: 150, lvl:20, score: 3000 },
-          { id: 4, username: "user4", email: "user3@example.com", experience: 50, lvl:10, score: 300 },
-          { id: 5, username: "user5", email: "user5@example.com", experience: 160, lvl:10, score: 5000 },
-          // ... more player data
-        ];
+  const loadPlayersFromApi = async () => {
+    try {
+      const response = await axios.get(`/api/score/${gameId}`);
+      const playerData = response.data.result;
 
-    // Sort data based on score in descending order
-    const sortedData = fakeApiData.sort((a, b) => b.score - a.score);
-
-    setPlayers(fakeApiData);
-    setOriginalPlayers(fakeApiData);
+      // Sort data based on score in descending order
+      playerData.sort((a, b) => b.totalScore - a.totalScore);
+      setPlayers(playerData);
+    } catch (error) {
+      console.error("Error fetching player data:", error);
+    }
   };
 
   useEffect(() => {
@@ -85,8 +81,8 @@ export default function Table() {
             {filteredPlayers().map((player, key) => (
               <tr key={key}>
                 <td>{key + 1}</td>
-                <td>{player.username}</td>
-                <td>{player.score}</td>
+                <td>{player.player}</td>
+                <td>{player.totalScore}</td>
                 <td>{/* Position is determined by array index */}
               {getMedalIcon(key + 1)}</td> {/* Pass position to getMedalIcon */}
               </tr>

@@ -49,7 +49,7 @@ export default function IndexGamelist({ refresh }) {
           {games &&
             games.map((game, key) => (
               <a key={key} className="mx-3 text-center">
-                <Link to={"/rockpaperscissor/:id"}>
+                <Link to={`/${game.id}/:id`}>
                 <div className="img"></div>
                 <div className="text-white text-center">{game.title}</div>
                 </Link>
@@ -59,45 +59,69 @@ export default function IndexGamelist({ refresh }) {
         <div className="game-categories">
         <h1>GAME FAVORITE</h1>
         <div className="section-1-img">
-                    <a href="#"><div className="img img-1 text-white"></div></a>
-                    <a href="#"><div className="img img-2"></div></a>
-                    <a href="#"><div className="img img-3"></div></a>
-                    <a href="#"><div className="img img-4"></div></a>
-                    <a href="#"><div className="img img-5"></div></a>
-                    <a href="#"><div className="img img-6"></div></a>
-                    <a href="#"><div className="img img-2"></div></a>
-                    <a href="#"><div className="img img-3"></div></a>
-                </div>
+          <Link className="mx-3 d-flex flex-column" href="#">
+            <div className="d-flex img text-white"></div>
+            <div className="text-white text-center">Jumanji</div>
+          </Link>
+          <Link className="mx-3 d-flex flex-column" href="#">
+            <div className="d-flex img img-2 text-white"></div>
+            <div className="text-white text-center">NBA 2K20 </div>
+          </Link>
+          <Link className="mx-3 d-flex flex-column" href="#">
+            <div className="d-flex img img-3 text-white"></div>
+            <div className="text-white text-center">Battlefield 2024</div>
+          </Link>
+          <Link className="mx-3 d-flex flex-column" href="#">
+            <div className="d-flex img img-4 text-white"></div>
+            <div className="text-white text-center">Black Ops</div>
+          </Link>
+          <Link className="mx-3 d-flex flex-column" href="#">
+            <div className="d-flex img img-5 text-white"></div>
+            <div className="text-white text-center">Minecraft</div>
+          </Link>
+          <Link className="mx-3 d-flex flex-column" href="#">
+            <div className="d-flex img img-6 text-white"></div>
+            <div className="text-white text-center">Fortnite</div>
+          </Link>
+      </div>
       </div>
       </div>
 
       <div className="game-categories">
         <h1>GAME CATEGORIES</h1>
         <div className="game-wrapper">
-          <a href="#">
+          <Link className="mx-3 d-flex flex-column" href="#">
             <div className="gw gw-1"></div>
-          </a>
-          <a href="#">
+            <div className="text-white text-center">Sport</div>
+          </Link>
+          <Link className="mx-3 d-flex flex-column" href="#">
             <div className="gw gw-2"></div>
-          </a>
-          <a href="#">
+            <div className="text-white text-center">Race</div>
+          </Link>
+          <Link className="mx-3 d-flex flex-column" href="#">
             <div className="gw gw-3"></div>
-          </a>
-          <a href="#">
+            <div className="text-white text-center">Action</div>
+          </Link>
+          <Link className="mx-3 d-flex flex-column" href="#">
             <div className="gw gw-4"></div>
-          </a>
-          <a href="#">
+            <div className="text-white text-center">Adventure</div>
+          </Link>
+          <Link className="mx-3 d-flex flex-column" href="#">
             <div className="gw gw-5"></div>
-          </a>
-          <a href="#">
+            <div className="text-white text-center">Card Game</div>
+          </Link>
+          <Link className="mx-3 d-flex flex-column" href="#">
             <div className="gw gw-6"></div>
-          </a>
-          <a href="#">
+            <div className="text-white text-center">FPS</div>
+          </Link>
+          <Link className="mx-3 d-flex flex-column" href="#">
             <div className="gw gw-7"></div>
-          </a>
-          <a href="#">
+            <div className="text-white text-center">FIFA Collection</div>
+          </Link>
+          <Link className="mx-3 d-flex flex-column" href="#">
             <div className="gw gw-8"></div>
-          </a>
+            <div className="text-white text-center">GOTY 2020</div>
+          </Link>
         </div>
       </div>
     </div>

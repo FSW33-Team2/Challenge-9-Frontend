@@ -9,6 +9,7 @@ import {
 import GameLeaderboardPage from "./pages/GameLeaderboardPage";
 import AuthPage from "./pages/AuthPage";
 import GameListPage from "./pages/GameListPage";
+import RpcGamePage from "./pages/RpcGamePage";
 
 
 
@@ -22,7 +23,7 @@ function App() {
 
         <Route path="/gamelist" element={<GameListPage />} />
 
-
+        <Route path="/:gameId/:id" element={<RpcGamePage />} />
 
       </Routes>
     </Router>

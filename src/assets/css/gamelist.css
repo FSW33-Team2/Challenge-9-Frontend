@@ -196,37 +196,37 @@ ul.navbar li a:hover:not(.active) {
   background-size: cover;
   background-position: center;
   border-radius: 10px;
-  margin: 0 15px 5px 0;
+  margin-bottom: 15px;
 }
 .section-1-img .img-2 {
   background: url(../images/nba.jpg);
   background-size: cover;
   background-position: center;
-  margin: 0 15px 5px 0;
+    margin-bottom: 15px;
 }
 .section-1-img .img-3 {
   background: url(../images/battlefield.jpg);
   background-size: cover;
   background-position: center;
-  margin: 0 15px 5px 0;
+    margin-bottom: 15px;
 }
 .section-1-img .img-4 {
   background: url(../images/warxone.jpg);
   background-size: cover;
   background-position: center;
-  margin: 0 15px 5px 0;
+    margin-bottom: 15px;
 }
 .section-1-img .img-5 {
   background: url(../images/craft.jpeg);
   background-size: cover;
   background-position: center;
-  margin: 0 15px 5px 0;
+    margin-bottom: 15px;
 }
 .section-1-img .img-6 {
   background: url(../images/fortnite.jpg);
   background-size: cover;
   background-position: center;
-  margin: 0 15px 5px 0;
+    margin-bottom: 15px;
 }
 
 .img:hover {
@@ -252,7 +252,7 @@ ul.navbar li a:hover:not(.active) {
   background: url(../images/asphalt8.jpg);
   background-size: cover;
   background-position: center;
-  margin: 0 15px 0 0;
+  margin-bottom: 15px;
   border-radius: 10px;
 }
 .gw:hover {
