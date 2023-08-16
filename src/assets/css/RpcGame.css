@@ -95,9 +95,21 @@ button {
 }
 
 /* refresh */
+
 .refresh {
   width: 70px;
   height: 60px;
+  filter: brightness(100%);
+  background-color: azure;
+  border-radius: 10px;
+  transform-origin: center center; /* Set the rotation pivot to the center */
+  transition: transform 0.3s; /* Add a smooth transition effect */
+}
+
+.refresh:hover {
+  cursor: pointer;
+  transform: rotate(180deg);
+  background-color: bisque;
 }
 
 /* gambar */

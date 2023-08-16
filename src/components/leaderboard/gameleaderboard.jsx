@@ -68,7 +68,9 @@ export default function Table({ refresh }) {
 
   return (
     <>
-      <table className="table table-striped table-warning text-center">
+    <div className="d-flex justify-content-center align-items-center">
+    <div className="text-center" style={{width: "80%" }}>
+      <table className="table table-striped table-warning">
         <thead>
           <tr>
             <th>RANK</th>
@@ -94,6 +96,8 @@ export default function Table({ refresh }) {
         <button className="btn btn-outline-danger btn-sm my-2 w-50" onClick={() => setPlayers([])}>
         Clear
         </button>
+        </div>
+      </div>
     </>
   );
 }

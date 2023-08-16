@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../src/App.css";
+import "../assets/css/RegisterLogin.css";
 import LoginForm from "../components/auth/login";
 import RegisterForm from "../components/auth/register";
 
@@ -16,6 +16,7 @@ function AuthPage() {
   const containerClass =
     "container " + (type === "register" ? "right-panel-active" : "");
   return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
     <div className="App">
     <h2>LOGIN / REGISTER</h2>
     <div className={containerClass} id="container">
@@ -52,6 +53,7 @@ function AuthPage() {
         </div>
       </div>
     </div>
+  </div>
   </div>
   )
 }

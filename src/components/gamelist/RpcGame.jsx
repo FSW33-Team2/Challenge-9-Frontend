@@ -8,10 +8,28 @@ import scissors from "../../assets/RpcGameImage/scissors.png";
 import logo from "../../assets/RpcGameImage/logo.png";
 import refreshImage from "../../assets/RpcGameImage/refresh.png";
 import {Link, useParams } from "react-router-dom";
+import { Modal, Button } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const choices = ['rock', 'paper', 'scissors'];
 
 export default function RpcGame( {onRefresh}) {
+
+  //scalling page
+  const scaleValue = 1;
+
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    // Set showModal to true when component is mounted
+    setShowModal(true);
+  }, []); // Empty dependency array ensures this effect runs only once
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
+
   // game logic
   const {id} = useParams();
   const {gameId} = useParams();
@@ -85,11 +103,10 @@ export default function RpcGame( {onRefresh}) {
   // routing 
   
 
-
-
-
   return (
 <>
+<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop:'20px'}}>
+<div style={{ transform: `scale(${scaleValue})` }}>
   <header className="d-flex align-items-center mt-3">
       <Link to="/gamelist">
         <img className="back" src={back} alt="Back Button"/>
@@ -135,7 +152,28 @@ export default function RpcGame( {onRefresh}) {
   <div className="d-flex justify-content-center" onClick={handleRefresh}>
     <img id="refresh" className="refresh" src={refreshImage} alt="refresh" />
   </div>
-  
-</>
+  </div>
+  </div>
+    {/* Modal */}
+    <Modal show={showModal} onHide={handleCloseModal} centered style={{background: 'black'}}>
+    <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '600px', background: 'black', color: 'goldenrod', textAlign: 'center' }}>
+        <Modal.Header style={{ justifyContent: 'center', fontSize: '35px' }}>
+          <Modal.Title style={{ textAlign: 'center', fontSize: '35px' }}>GUNTING BATU KERTAS</Modal.Title>
+        </Modal.Header>
+        <Modal.Body style={{ textAlign: 'justify', fontSize: '25px'}}>
+        Batu digambarkan oleh tangan mengepal, gunting digambarkan oleh jari telunjuk dan tengah, kertas digambarkan oleh tangan terbuka. Tujuan dari permainan adalah mengalahkan lawan bermain. Aturan standar adalah batu mengalahkan gunting, gunting mengalahkan kertas, dan kertas mengalahkan batu.
+        <br />
+        <br />
+        Mainkan gamenya untuk pengalaman terbaik!!
+        <br />
+        </Modal.Body>
+        <Modal.Footer style={{ justifyContent: "center" }}>
+        <Button variant="outline-warning" onClick={handleCloseModal} style={{ padding: '15px 30px', fontSize: '20px' }}>
+            Mainkan Game
+          </Button>
+        </Modal.Footer>
+        </div>
+      </Modal>
+      </>
   );
 }

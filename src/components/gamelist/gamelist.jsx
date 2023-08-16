@@ -26,12 +26,8 @@ export default function IndexGamelist({ refresh }) {
   };
 
   return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop:'20px'}}>
     <div className="wrapper">
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <br />
       <button className="btn btn-outline-warning" onClick={goToHome}><FontAwesomeIcon icon={faHome} /></button>
       <br />
@@ -124,6 +120,7 @@ export default function IndexGamelist({ refresh }) {
           </Link>
         </div>
       </div>
+    </div>
     </div>
   );
 }
