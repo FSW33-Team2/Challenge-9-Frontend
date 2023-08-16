@@ -10,9 +10,6 @@
 }
 
 body {
-  background-image: url("./assets/requirements.png");
-  display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
@@ -106,7 +103,7 @@ input {
 .container {
   background-color: black;
   border-radius: 10px;
-  box-shadow: 3px 7px 12px -2px rgba(129,114,22,0.75);
+  box-shadow: 3px 7px 12px -2px rgba(129, 114, 22, 0.75);
   position: relative;
   overflow: hidden;
   width: 768px;
@@ -175,7 +172,7 @@ input {
 }
 
 .overlay {
-  background: linear-gradient( rgba(255,183,0,1) 50%, rgb(203, 127, 64) 100%);
+  background: linear-gradient(rgba(255, 183, 0, 1) 50%, rgb(203, 127, 64) 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;

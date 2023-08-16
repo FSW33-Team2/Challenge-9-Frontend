@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../../src/App.css";
 import LoginForm from "../components/auth/login";
 import RegisterForm from "../components/auth/register";
+import NavbarHome from "../components/navbar";
 
 
 
@@ -17,6 +18,7 @@ function AuthPage() {
     "container " + (type === "register" ? "right-panel-active" : "");
   return (
     <div className="App">
+      <NavbarHome />
     <h2>LOGIN / REGISTER</h2>
     <div className={containerClass} id="container">
       <RegisterForm />

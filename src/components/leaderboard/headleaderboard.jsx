@@ -17,9 +17,6 @@ export default function HeadeLeaderboardSection() {
 
   return (
     <div className="p-5">
-      <button className="btn btn-outline-warning" onClick={goToHome}>
-        <FontAwesomeIcon icon={faHome} />
-      </button>
       <br />
       <br />
       <h1 className="fs-1 text-warning text-center">Game Leaderboard</h1>
