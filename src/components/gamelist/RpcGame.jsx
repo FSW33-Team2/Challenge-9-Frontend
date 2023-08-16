@@ -23,7 +23,8 @@ export default function RpcGame( {onRefresh}) {
 
   const refreshToken = async() => {
     try {
-      const response = await axios.get('http://localhost:8000/api/auth/token');
+      
+      const response = await axios.get('/api/auth/token');
       console.log(response);
       setToken(response.data.accessToken)
       const decoded = jwtDecode(response.data.accessToken)
