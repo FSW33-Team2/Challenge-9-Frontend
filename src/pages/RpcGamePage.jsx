@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import RpcGame from "../components/gamelist/RpcGame";
 import Table from "../components/leaderboard/gameleaderboard";
 import HeadeLeaderboardSection from "../components/leaderboard/headleaderboard";
-import NavbarHome from "../components/navbar";
+import NavbarHome from "../components/navbarHome";
 
 function Rpc() {
   const [refresh, setRefresh] = useState(0);

@@ -11,10 +11,10 @@ import tweeterSvg from "../assets/ilham-img/twitter.svg";
 import jadaGriffin from "../assets/ilham-img/jada-griffin.jpg";
 import aaronwiliam from "../assets/ilham-img/aaron-williams.jpg";
 import skullPng from "../assets/ilham-img/skull.png";
-import NavbarHome from "./navbar";
+import NavbarHome from "./navbarHome";
 
 
-export default function LandingHome() {
+export default function HomePage() {
     return (
         <React.Fragment>
       {/* <!--page1-----------> */}

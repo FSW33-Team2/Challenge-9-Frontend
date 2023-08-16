@@ -11,11 +11,13 @@ import logo from "../../assets/RpcGameImage/logo.png";
 import refreshImage from "../../assets/RpcGameImage/refresh.png";
 import {Link, useParams } from "react-router-dom";
 
+
 const choices = ['rock', 'paper', 'scissors'];
 
 export default function RpcGame( {onRefresh}) {
   const [name, setName] = useState('');
   const [token, setToken] = useState('');
+  const [id, setId] = useState('');
 
   useEffect(() => {
     refreshToken();
@@ -28,7 +30,7 @@ export default function RpcGame( {onRefresh}) {
       console.log(response);
       setToken(response.data.accessToken)
       const decoded = jwtDecode(response.data.accessToken)
-      console.log(decoded);
+      setId(decoded.userId);
     } catch (error) {
       
     }
@@ -36,7 +38,7 @@ export default function RpcGame( {onRefresh}) {
 
 
   // game logic
-  const {id} = useParams();
+  
   const {gameId} = useParams();
   const [score, setScore] = useState()
 

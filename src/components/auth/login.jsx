@@ -33,7 +33,7 @@ function LoginForm() {
         email: email ,
         password : password,
       });
-      history('/game/1/1');
+      history('/home');
     } catch (error) {
       if(error.response){
         setMsg(error.response.data.msg);

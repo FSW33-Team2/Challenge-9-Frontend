@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import axios from "../lib/axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
-import NavbarHome from "../navbar";
+import NavbarHome from "../navbarHome";
 
 
 export default function IndexGamelist({ refresh }) {
@@ -45,7 +45,7 @@ export default function IndexGamelist({ refresh }) {
           {games &&
             games.map((game, key) => (
               <a key={key} className="mx-3 text-center">
-                <Link to={`/game/${game.id}/:id`}>
+                <Link to={`/game/${game.id}`}>
                 <div className="img"></div>
                 <div className="text-white text-center">{game.title}</div>
                 </Link>
