@@ -7,10 +7,29 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { useParams } from "react-router-dom";
+import jwtDecode from "jwt-decode";
 
 export default function Table({ refresh }) {
   const {gameId} = useParams();
   const [players, setPlayers] = useState([]);
+  const [name, setName] = useState('');
+  const [token, setToken] = useState('');
+
+  useEffect(() => {
+    refreshToken();
+  }, [])
+
+  const refreshToken = async() => {
+    try {
+      const response = await axios.get('http://localhost:8000/api/auth/token');
+      console.log(response);
+      setToken(response.data.accessToken)
+      const decoded = jwtDecode(response.data.accessToken)
+      console.log(decoded);
+    } catch (error) {
+      
+    }
+  }
   const searchField = "player";
   const searchQuery = "";
 
@@ -23,7 +42,6 @@ export default function Table({ refresh }) {
       const response = await axios.get(`/api/score/leaderboard/${gameId}`);
       const playerData = response.data.data ;
 
-      console.log(playerData);
 
       // Sort data based on score in descending order
 

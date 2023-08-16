@@ -45,7 +45,7 @@ export default function IndexGamelist({ refresh }) {
           {games &&
             games.map((game, key) => (
               <a key={key} className="mx-3 text-center">
-                <Link to={`/${game.id}/:id`}>
+                <Link to={`/game/${game.id}/:id`}>
                 <div className="img"></div>
                 <div className="text-white text-center">{game.title}</div>
                 </Link>

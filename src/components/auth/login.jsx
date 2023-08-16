@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { FaFacebookF, FaGooglePlusG, FaLinkedinIn } from 'react-icons/fa';
 import { useNavigate } from "react-router-dom";
+import jwtDecode from 'jwt-decode';
 
 
 function LoginForm() {
@@ -10,6 +11,8 @@ function LoginForm() {
     password: ""
   });
   const [msg, setMsg] = useState('');
+  const [name, setName] = useState('');
+  const [token, setToken] = useState('');
   const history = useNavigate();
 
   const handleChange = evt => {
@@ -30,7 +33,7 @@ function LoginForm() {
         email: email ,
         password : password,
       });
-      history('/home');
+      history('/game/1/1');
     } catch (error) {
       if(error.response){
         setMsg(error.response.data.msg);

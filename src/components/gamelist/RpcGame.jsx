@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "../lib/axios";
+import jwtDecode from "jwt-decode";
+import { useNavigate } from "react-router-dom";
 import "../../assets/css/RpcGame.css";
 import back from "../../assets/RpcGameImage/back.svg";
 import rock from "../../assets/RpcGameImage/rock.png";
@@ -12,6 +14,26 @@ import {Link, useParams } from "react-router-dom";
 const choices = ['rock', 'paper', 'scissors'];
 
 export default function RpcGame( {onRefresh}) {
+  const [name, setName] = useState('');
+  const [token, setToken] = useState('');
+
+  useEffect(() => {
+    refreshToken();
+  }, []);
+
+  const refreshToken = async() => {
+    try {
+      const response = await axios.get('http://localhost:8000/api/auth/token');
+      console.log(response);
+      setToken(response.data.accessToken)
+      const decoded = jwtDecode(response.data.accessToken)
+      console.log(decoded);
+    } catch (error) {
+      
+    }
+  }
+
+
   // game logic
   const {id} = useParams();
   const {gameId} = useParams();

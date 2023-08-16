@@ -27,7 +27,7 @@ function App() {
 
         <Route path="/gamelist" element={<GameListPage />} />
 
-        <Route path="/:gameId/:id" element={<RpcGamePage />} />
+        <Route path="/game/:gameId/:id" element={<RpcGamePage />} />
 
 
 
